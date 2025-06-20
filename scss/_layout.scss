@@ -1,0 +1,60 @@
+@use "variables";
+
+body {
+  background: #fff;
+}
+
+main {
+  padding-top: 80px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: variables.$yellow;
+  padding: 1rem;
+  z-index: 1000;
+
+  .logo {
+    font-weight: bold;
+  }
+
+  nav {
+    margin-top: 1rem;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+
+      li a {
+        color: variables.$blue;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #eee;
+}
+
+.back-to-top-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  a {
+    background: variables.$cyan;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: variables.$black;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+}

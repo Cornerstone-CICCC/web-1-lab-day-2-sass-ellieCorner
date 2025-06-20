@@ -1,0 +1,27 @@
+.fruit-hover {
+  figure {
+    margin: 0;
+    position: relative;
+    width: 33.33%;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    figcaption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: red;
+      color: white;
+      font-size: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover figcaption {
+      opacity: 1;
+    }
+  }
+}

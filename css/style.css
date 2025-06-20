@@ -1,3 +1,125 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: serif;
+}
+
+body {
+  background: #fff;
+}
+
+main {
+  padding-top: 80px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffff00;
+  padding: 1rem;
+  z-index: 1000;
+}
+header .logo {
+  font-weight: bold;
+}
+header nav {
+  margin-top: 1rem;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li a {
+  color: #0000ff;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #eee;
+}
+
+.back-to-top-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+.back-to-top-btn a {
+  background: #00ffff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  background: #00ffff;
+  padding: 0.5rem;
+  position: sticky;
+  top: 86px;
+  z-index: 500;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 1rem;
+}
+.gallery img {
+  width: 100%;
+  display: block;
+}
+
+.fruit-hover figure {
+  margin: 0;
+  position: relative;
+  width: 33.33%;
+}
+.fruit-hover figure img {
+  width: 100%;
+  display: block;
+}
+.fruit-hover figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.fruit-hover figure:hover figcaption {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
